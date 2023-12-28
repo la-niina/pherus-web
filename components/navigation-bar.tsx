@@ -16,6 +16,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import Image from "next/image";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -63,7 +64,13 @@ export function Navigationbar({ items }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10">
       <Link href="/" className="flex items-center space-x-2">
-        <Icons.logo className="h-6 w-6" />
+        <Image
+          width={40}
+          height={40}
+          className="h-10 w-10 bg-[#ff8138] rounded-full"
+          alt="pherus"
+          src="/logo.webp"
+        />
         <div className="flex flex-col">
           <span className="inline-block font-bold">{siteConfig.name}</span>
           <span className="inline-block text-[8px]">{siteConfig.slogan}</span>
@@ -85,9 +92,16 @@ export function Navigationbar({ items }: MainNavProps) {
                       className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                       href="/"
                     >
-                      <Icons.logo className="h-6 w-6" />
+                      <Image
+                        width={40}
+                        height={40}
+                        className="h-10 w-10 bg-[#ff8138] rounded-full"
+                        alt="pherus"
+                        src="/logo.webp"
+                      />
+
                       <div className="mb-2 mt-4 text-lg font-medium">
-                        shadcn/ui
+                        {siteConfig.name}
                       </div>
                       <p className="text-sm leading-tight text-muted-foreground">
                         Beautifully designed components built with Radix UI and
@@ -116,7 +130,7 @@ export function Navigationbar({ items }: MainNavProps) {
             <NavigationMenuTrigger className="flex bg-transparent">
               Components
             </NavigationMenuTrigger>
-            
+
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {components.map((component) => (

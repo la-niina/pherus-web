@@ -21,8 +21,8 @@ import {
 
 export function SiteHeader() {
   return (
-    <header className="bg-transparent sticky top-0 z-40 w-full">
-      <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
+    <header className="bg-transparent sticky top-0 z-40 w-full max-w-screen-2xl p-0 mx-0">
+      <div className="container flex h-16 items-center space-x-1 sm:justify-between sm:space-x-0 max-w-screen-2xl pr-[12px] pl-[12px] mx-auto">
         <Navigationbar items={siteConfig.mainNav} />
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">

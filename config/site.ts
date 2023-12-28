@@ -2,6 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "Pherus",
+  appName: "pherus.app",
   slogan: "Holistic Health care with you in mind",
   header: "An holistic approach to healthcare for everyone at the tips of your fingers",
   subheader: "Pherus is a comprehensive health ecosystem with an holistic approach to your wellbeing, that aims to simplify and make health reachable, affordable, and obtainable by everyone.",
@@ -17,4 +18,10 @@ export const siteConfig = {
     github: "https://github.com/shadcn/ui",
     docs: "https://ui.shadcn.com",
   },
+  copyrights: {
+    trademake: "©",
+    name: "pherus",
+    yearIssued: "2024",
+    declaration: "All Rights Reserved."
+  }
 };
