@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Showcase() {
   return (
     <div className="flex flex-col max-w-screen-2xl">
@@ -12,24 +14,7 @@ export default function Showcase() {
         </div>
 
         <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
-          <img
-            src="https://tailwindcss.com/_next/static/media/beach-house.9b9ee168.jpg"
-            alt=""
-            className="w-full h-60 object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full"
-            loading="lazy"
-          />
-          <img
-            src="https://tailwindcss.com/_next/static/media/beach-house-interior-1.f151eb56.jpg"
-            alt=""
-            className="hidden w-full h-52 object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32"
-            loading="lazy"
-          />
-          <img
-            src="https://tailwindcss.com/_next/static/media/beach-house-interior-2.3672af98.jpg"
-            alt=""
-            className="hidden w-full h-52 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-32"
-            loading="lazy"
-          />
+         
         </div>
 
         <dl className="mt-4 text-xs font-medium flex items-center row-start-2 sm:mt-1 sm:row-start-3 md:mt-2.5 lg:row-start-2">
