@@ -1,5 +1,7 @@
-import { NextResponse } from "next/server";
+import { Hono } from "hono";
 
-export async function GET(request: Request) {
-  return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
-}
+const books = new Hono();
+
+books.get("/", (c) => c.text("Hono!"));
+
+export default books;

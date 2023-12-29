@@ -1,36 +1,9 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useRef } from "react";
 
 export default function VideoPlayer() {
   const videoRef = useRef<HTMLVideoElement | null>(null); // Specify the type explicitly
-  const [isPlaying, setPlaying] = useState(false);
-  const [isFullscreen, setFullscreen] = useState(false);
-
-  const playPauseHandler = () => {
-    const video = videoRef.current;
-    if (video) {
-      if (isPlaying) {
-        video.pause();
-      } else {
-        video.play();
-      }
-      setPlaying(!isPlaying);
-    }
-  };
-
-  const fullscreenHandler = () => {
-    const video = videoRef.current;
-    if (video) {
-      if (isFullscreen) {
-        document.exitFullscreen();
-      } else {
-        video.requestFullscreen();
-      }
-      setFullscreen(!isFullscreen);
-    }
-  };
-
   return (
     <div className="flex flex-col col-span-1 rounded-sm">
       <video
