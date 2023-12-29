@@ -20,6 +20,8 @@ const config = {
     },
     extend: {
       fontFamily: {
+        display: ["Pally", "Comic Sans MS", "sans-serif"],
+        body: ["Pally", "Comic Sans MS", "sans-serif"],
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       colors: {

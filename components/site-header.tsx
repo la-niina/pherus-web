@@ -8,6 +8,7 @@ import { Navigationbar } from "./navigation-bar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import Image from "next/image";
 import {
   Sheet,
   SheetClose,
@@ -73,36 +74,41 @@ export function SiteHeader() {
                   <span className="sr-only">drawer</span>
                 </div>
               </SheetTrigger>
-              <SheetContent>
+
+              <SheetContent className="h-full rounded-md">
                 <SheetHeader>
-                  <SheetTitle>Edit profile</SheetTitle>
+                  <SheetTitle>
+                    <Link href="/" className="flex items-start space-x-2">
+                      <Image
+                        width={40}
+                        height={40}
+                        className="h-10 w-10 bg-[#ff8138] rounded-full"
+                        alt="pherus"
+                        src="/logo.webp"
+                      />
+                      <div className="flex flex-col justify-start items-start">
+                        <h3 className="font-bold">{siteConfig.name}</h3>
+                        <a className="text-[12px]">{siteConfig.slogan}</a>
+                      </div>
+                    </Link>
+                  </SheetTitle>
+
                   <SheetDescription>
                     Make changes to your profile here. Click save when you're
                     done.
                   </SheetDescription>
                 </SheetHeader>
+
                 <div className="grid gap-4 py-4">
                   <div className="grid grid-cols-4 items-center gap-4">
-                    <Label htmlFor="name" className="text-right">
-                      Name
-                    </Label>
-                    <Input
-                      id="name"
-                      value="Pedro Duarte"
-                      className="col-span-3"
-                    />
+                    <text>Name</text>
                   </div>
+
                   <div className="grid grid-cols-4 items-center gap-4">
-                    <Label htmlFor="username" className="text-right">
-                      Username
-                    </Label>
-                    <Input
-                      id="username"
-                      value="@peduarte"
-                      className="col-span-3"
-                    />
+                    <text>Name</text>
                   </div>
                 </div>
+
                 <SheetFooter>
                   <SheetClose asChild>
                     <Button type="submit">Save changes</Button>

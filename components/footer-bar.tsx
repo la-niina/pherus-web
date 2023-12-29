@@ -47,13 +47,13 @@ export function Footerbar() {
                 </li>
 
                 <li className="flex">
-                  <a href="/" className="flex text-sm hover:text-base">
+                  <a href="/showcase" className="flex text-sm hover:text-base">
                     Showcase
                   </a>
                 </li>
 
                 <li className="flex">
-                  <a href="/" className="flex text-sm hover:text-base">
+                  <a href="/blog" className="flex text-sm hover:text-base">
                     Blog
                   </a>
                 </li>
@@ -100,6 +100,13 @@ export function Footerbar() {
                     Ideas
                   </a>
                 </li>
+
+                <li>
+                  <a href="/" className="flex text-sm hover:text-base">
+                    Instituations
+                  </a>
+                </li>
+                
               </ul>
             </div>
 
@@ -140,19 +147,19 @@ export function Footerbar() {
               </h2>
               <ul className="text-gray-600 dark:text-gray-400">
                 <li className="mb-1">
-                  <a href="#" className="flex text-sm hover:text-base">
+                  <a href="/legal/privacy-policy" className="flex text-sm hover:text-base">
                     Privacy Policy
                   </a>
                 </li>
 
                 <li className="mb-1">
-                  <a href="#" className="flex text-sm hover:text-base">
+                  <a href="/legal/eula" className="flex text-sm hover:text-base">
                     End User License
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="flex text-sm hover:text-base">
+                  <a href="/legal/terms" className="flex text-sm hover:text-base">
                     Terms &amp; Conditions
                   </a>
                 </li>

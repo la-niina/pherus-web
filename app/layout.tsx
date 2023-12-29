@@ -10,7 +10,8 @@ import type { Viewport } from "next";
 import { Footerbar } from "@/components/footer-bar";
 
 export const fontSans = FontSans({
-  subsets: ["latin"],
+  subsets: ["latin", "greek", "cyrillic", "latin-ext"],
+  weight: ["600", "700", "800", "900"],
   variable: "--font-sans",
 });
 
