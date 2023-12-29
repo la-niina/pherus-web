@@ -28,103 +28,131 @@ export function Footerbar() {
             </a>
           </div>
 
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 dark:text-white">
                 Resources
               </h2>
-              <ul className="text-gray-600 dark:text-gray-400">
-                <li className="mb-1">
-                  <a href="/" className="hover:underline">
-                    Services and Locations
+              <ul className="text-gray-600 dark:text-gray-400 gap-2">
+                <li className="flex">
+                  <a href="/" className="flex text-sm hover:text-base">
+                    Docs
                   </a>
                 </li>
 
-                <li className="mb-1">
-                  <a href="/" className="hover:underline">
-                    Technical Knowledge
+                <li className="flex">
+                  <a href="/" className="flex text-sm hover:text-base">
+                    Learn
                   </a>
                 </li>
 
-                <li className="mb-1">
-                  <a href="/" className="hover:underline">
-                    Research and Peer review
+                <li className="flex">
+                  <a href="/" className="flex text-sm hover:text-base">
+                    Showcase
                   </a>
                 </li>
 
-                <li>
-                  <a
-                    href="https://tailwindcss.com/"
-                    className="hover:underline"
-                  >
-                    Developers Documentations
+                <li className="flex">
+                  <a href="/" className="flex text-sm hover:text-base">
+                    Blog
+                  </a>
+                </li>
+
+                <li className="flex">
+                  <a href="/" className="flex text-sm hover:text-base">
+                    Analytics
+                  </a>
+                </li>
+
+                <li className="flex">
+                  <a href="/" className="flex text-sm hover:text-base">
+                    Previews
                   </a>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                Follow us
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 dark:text-white">
+                More
               </h2>
               <ul className="text-gray-600 dark:text-gray-400">
                 <li className="mb-1">
-                  <a
-                    href="https://github.com/themesberg/flowbite"
-                    className="hover:underline "
-                  >
-                    X
+                  <a href="/" className="flex text-sm hover:text-base">
+                    Commerce
                   </a>
                 </li>
 
                 <li className="mb-1">
-                  <a
-                    href="https://github.com/themesberg/flowbite"
-                    className="hover:underline "
-                  >
-                    Facebook
+                  <a href="/" className="flex text-sm hover:text-base">
+                    Funding and Sponsership
                   </a>
                 </li>
 
                 <li>
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline"
-                  >
+                  <a href="/" className="flex text-sm hover:text-base">
+                    Release
+                  </a>
+                </li>
+
+                <li>
+                  <a href="/" className="flex text-sm hover:text-base">
+                    Ideas
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 dark:text-white">
+                About Pherus
+              </h2>
+              <ul className="text-gray-600 dark:text-gray-400">
+                <li className="mb-1">
+                  <a href="/" className="flex text-sm hover:text-base">
+                    Open source software
+                  </a>
+                </li>
+
+                <li className="mb-1">
+                  <a href="/" className="flex text-sm hover:text-base">
+                    Github
+                  </a>
+                </li>
+
+                <li>
+                  <a href="/" className="flex text-sm hover:text-base">
                     Official Website
                   </a>
                 </li>
 
                 <li>
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline"
-                  >
-                    Youtube
+                  <a href="/" className="flex text-sm hover:text-base">
+                    X/Twitter
                   </a>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 dark:text-white">
                 Legal
               </h2>
               <ul className="text-gray-600 dark:text-gray-400">
                 <li className="mb-1">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="flex text-sm hover:text-base">
                     Privacy Policy
                   </a>
                 </li>
 
                 <li className="mb-1">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="flex text-sm hover:text-base">
                     End User License
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="flex text-sm hover:text-base">
                     Terms &amp; Conditions
                   </a>
                 </li>
