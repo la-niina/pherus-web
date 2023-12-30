@@ -3,6 +3,7 @@ import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function Home() {
   const posts = [
@@ -142,6 +143,7 @@ export default function Home() {
           <h2 className="text-center text-lg font-semibold leading-8">
             Trusted by the world’s most innovative teams
           </h2>
+
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
             <Image
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
@@ -179,6 +181,274 @@ export default function Home() {
               height={48}
             />
           </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col">
+        <h1 className="text-center text-2xl font-extrabold leading-8">
+          Our Approach To World HealthCare
+        </h1>
+        <p className="text-center line-clamp-3">
+          Imagine a world where everyone has access to quality healthcare, no
+          matter where they live, your social , economic and life style.
+        </p>
+
+        <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 mt-5">
+          {/* Your Wellbeing */}
+          <Card
+            className="flex col-span-1"
+            style={{
+              transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
+              boxShadow:
+                "0 0 0 1px rgba(53,72,91,.14), 0 3px 2px rgba(0,0,0,.04), 0 7px 5px rgba(0,0,0,.02), 0 13px 10px rgba(0,0,0,.02), 0 22px 17px rgba(0,0,0,.02) !important",
+            }}
+          >
+            <CardContent className="flex flex-col justify-center">
+              <text>Your Wellbeing</text>
+              <a className="flex text-xs font-light">
+                Elevate your holistic health experience with Pherus. Monitor
+                every facet of your well-being, from physical and mental health
+                to emotional and medical aspects, all at your fingertips. Your
+                health, your control. Personalized insights empower you to make
+                informed decisions and live your best life.
+              </a>
+            </CardContent>
+          </Card>
+
+          {/* Interprofessionals */}
+          <Card
+            className="flex col-span-1"
+            style={{
+              transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
+              boxShadow:
+                "0 0 0 1px rgba(53,72,91,.14), 0 3px 2px rgba(0,0,0,.04), 0 7px 5px rgba(0,0,0,.02), 0 13px 10px rgba(0,0,0,.02), 0 22px 17px rgba(0,0,0,.02) !important",
+            }}
+          >
+            <CardContent className="flex flex-col justify-center">
+              <text>Interprofessionals</text>
+              <a className="flex text-xs font-light">
+                Connect seamlessly with healthcare professionals on Pherus. Our
+                platform brings together doctors, nurses, pharmacists, and more,
+                fostering collaborative care. Professionals interact with
+                patients at their convenience, providing international and local
+                expertise. Quality care meets your schedule and budget, creating
+                a truly patient-centered experience.
+              </a>
+            </CardContent>
+          </Card>
+
+          {/* Hospitals */}
+          <Card
+            className="flex col-span-1"
+            style={{
+              transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
+              boxShadow:
+                "0 0 0 1px rgba(53,72,91,.14), 0 3px 2px rgba(0,0,0,.04), 0 7px 5px rgba(0,0,0,.02), 0 13px 10px rgba(0,0,0,.02), 0 22px 17px rgba(0,0,0,.02) !important",
+            }}
+          >
+            <CardContent className="flex flex-col justify-center">
+              <text>Hospitals</text>
+              <a className="flex text-xs font-light">
+                Embark on a journey of healthcare excellence with Pherus.
+                Explore the world of better, practical, and internationally
+                recognized medical mobility—all in one accessible platform.
+                Access top-tier healthcare institutions, renowned specialists,
+                and cutting-edge treatments. Your destination for enhanced
+                medical care is just a click away, ensuring a healthier and more
+                fulfilling life.
+              </a>
+            </CardContent>
+          </Card>
+
+          {/* Pharmacies */}
+          <Card
+            className="flex col-span-1"
+            style={{
+              transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
+              boxShadow:
+                "0 0 0 1px rgba(53,72,91,.14), 0 3px 2px rgba(0,0,0,.04), 0 7px 5px rgba(0,0,0,.02), 0 13px 10px rgba(0,0,0,.02), 0 22px 17px rgba(0,0,0,.02) !important",
+            }}
+          >
+            <CardContent className="flex flex-col justify-center">
+              <text>Pharmacies</text>
+              <a className="flex text-xs font-light">
+                Experience the power of connectivity with Pherus. Pharmacies can
+                now deliver to both international and local markets, building
+                trust and achieving better results. Join the network that
+                amplifies your impact and expands your reach. Pherus streamlines
+                pharmacy operations, ensuring timely deliveries, inventory
+                management, and a seamless patient experience. Trust us to
+                enhance your pharmacy's performance and reputation.
+              </a>
+            </CardContent>
+          </Card>
+
+          {/* Laboratories */}
+          <Card
+            className="flex col-span-1"
+            style={{
+              transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
+              boxShadow:
+                "0 0 0 1px rgba(53,72,91,.14), 0 3px 2px rgba(0,0,0,.04), 0 7px 5px rgba(0,0,0,.02), 0 13px 10px rgba(0,0,0,.02), 0 22px 17px rgba(0,0,0,.02) !important",
+            }}
+          >
+            <CardContent className="flex flex-col justify-center">
+              <text>Laboratories</text>
+              <a className="flex text-xs font-light">
+                Seamless collaboration in healthcare is possible with Pherus.
+                Doctors, nurses, and pharmacists interact with patients,
+                ensuring comfort, convenience, and global access. Elevate your
+                laboratory services to new heights with Pherus. Enjoy efficient
+                data sharing, enhanced research capabilities, and the ability to
+                provide accurate and timely diagnostics. Pherus is your partner
+                in advancing laboratory excellence.
+              </a>
+            </CardContent>
+          </Card>
+
+          {/* Institutions */}
+          <Card
+            className="flex col-span-1"
+            style={{
+              transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
+              boxShadow:
+                "0 0 0 1px rgba(53,72,91,.14), 0 3px 2px rgba(0,0,0,.04), 0 7px 5px rgba(0,0,0,.02), 0 13px 10px rgba(0,0,0,.02), 0 22px 17px rgba(0,0,0,.02) !important",
+            }}
+          >
+            <CardContent className="flex flex-col justify-center">
+              <text>Institutions</text>
+              <a className="flex text-xs font-light">
+                Pherus transforms healthcare institutions into global hubs of
+                knowledge and collaboration. Publish research, conduct studies,
+                and connect on an intercontinental scale. Focus on what you do
+                best, while Pherus handles the unseen aspects, ensuring a
+                seamless and impactful healthcare experience. Harness the power
+                of our platform to elevate your institution's reputation,
+                facilitate groundbreaking research, and contribute to global
+                healthcare advancements.
+              </a>
+            </CardContent>
+          </Card>
+
+          {/* Telemedicine */}
+          <Card
+            className="flex col-span-1"
+            style={{
+              transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
+              boxShadow:
+                "0 0 0 1px rgba(53,72,91,.14), 0 3px 2px rgba(0,0,0,.04), 0 7px 5px rgba(0,0,0,.02), 0 13px 10px rgba(0,0,0,.02), 0 22px 17px rgba(0,0,0,.02) !important",
+            }}
+          >
+            <CardContent className="flex flex-col justify-center">
+              <text>Telemedicine</text>
+              <a className="flex text-xs font-light">
+                Connect with healthcare professionals remotely through Pherus
+                Telemedicine. Access virtual consultations, receive
+                prescriptions online, and ensure continuity of care from the
+                comfort of your home. Pherus brings the doctor's office to you,
+                making healthcare accessible anytime, anywhere.
+              </a>
+            </CardContent>
+          </Card>
+
+          {/* Electronic Health Records (EHR) */}
+          <Card
+            className="flex col-span-1"
+            style={{
+              transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
+              boxShadow:
+                "0 0 0 1px rgba(53,72,91,.14), 0 3px 2px rgba(0,0,0,.04), 0 7px 5px rgba(0,0,0,.02), 0 13px 10px rgba(0,0,0,.02), 0 22px 17px rgba(0,0,0,.02) !important",
+            }}
+          >
+            <CardContent className="flex flex-col justify-center">
+              <text>Electronic Health Records (EHR)</text>
+              <a className="flex text-xs font-light">
+                Pherus centralizes your health information securely in one
+                digital space. Access your Electronic Health Records (EHR)
+                anytime, allowing healthcare professionals to make informed
+                decisions based on your complete medical history. Streamline
+                healthcare processes, reduce paperwork, and enhance patient
+                safety.
+              </a>
+            </CardContent>
+          </Card>
+
+          {/* Health Monitoring Devices Integration */}
+          <Card className="flex col-span-1">
+            <CardContent className="flex flex-col justify-center">
+              <text>Health Monitoring Devices Integration</text>
+              <a className="flex text-xs font-light">
+                Seamlessly integrate your wearable devices and health monitoring
+                gadgets with Pherus. Monitor vital signs, track fitness levels,
+                and share real-time health data with your healthcare providers.
+                Pherus ensures a comprehensive and proactive approach to your
+                well-being, leveraging the power of connected health devices.
+              </a>
+            </CardContent>
+          </Card>
+
+          {/* Prescription Management */}
+          <Card
+            className="flex col-span-1"
+            style={{
+              transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
+              boxShadow:
+                "0 0 0 1px rgba(53,72,91,.14), 0 3px 2px rgba(0,0,0,.04), 0 7px 5px rgba(0,0,0,.02), 0 13px 10px rgba(0,0,0,.02), 0 22px 17px rgba(0,0,0,.02) !important",
+            }}
+          >
+            <CardContent className="flex flex-col justify-center">
+              <text>Prescription Management</text>
+              <a className="flex text-xs font-light">
+                Simplify your medication journey with Pherus Prescription
+                Management. Receive electronic prescriptions, set medication
+                reminders, and easily refill prescriptions online. Pherus
+                ensures accuracy in medication management, improving adherence
+                and overall health outcomes.
+              </a>
+            </CardContent>
+          </Card>
+
+          {/* Health Education and Resources */}
+          <Card
+            className="flex col-span-1"
+            style={{
+              transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
+              boxShadow:
+                "0 0 0 1px rgba(53,72,91,.14), 0 3px 2px rgba(0,0,0,.04), 0 7px 5px rgba(0,0,0,.02), 0 13px 10px rgba(0,0,0,.02), 0 22px 17px rgba(0,0,0,.02) !important",
+            }}
+          >
+            <CardContent className="flex flex-col justify-center">
+              <text>Health Education and Resources</text>
+              <a className="flex text-xs font-light">
+                Empower yourself with Pherus's rich repository of health
+                education materials. Access informative articles, videos, and
+                resources covering a wide range of health topics. Stay informed,
+                make healthy choices, and actively participate in your
+                well-being journey with Pherus's educational resources.
+              </a>
+            </CardContent>
+          </Card>
+
+          {/* Appointment Scheduling */}
+          <Card
+            className="flex col-span-1"
+            style={{
+              transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
+              boxShadow:
+                "0 0 0 1px rgba(53,72,91,.14), 0 3px 2px rgba(0,0,0,.04), 0 7px 5px rgba(0,0,0,.02), 0 13px 10px rgba(0,0,0,.02), 0 22px 17px rgba(0,0,0,.02) !important",
+            }}
+          >
+            <CardContent className="flex flex-col justify-center">
+              <text>Appointment Scheduling</text>
+              <a className="flex text-xs font-light">
+                Take control of your healthcare appointments with Pherus
+                Appointment Scheduling. Book and manage appointments online,
+                receive reminders, and streamline the check-in process. Pherus
+                ensures a hassle-free and organized approach to your healthcare
+                appointments, saving you time and reducing wait times.
+              </a>
+            </CardContent>
+          </Card>
         </div>
       </div>
 
