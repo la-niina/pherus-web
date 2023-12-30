@@ -2,11 +2,15 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "Pherus",
+  siteName: "Pherus - Holistic Health care with you in mind",
   appName: "pherus.app",
   slogan: "Holistic Health care with you in mind",
-  header: "An holistic approach to healthcare for everyone at the tips of your fingers",
-  subheader: "Pherus is a comprehensive health ecosystem with an holistic approach to your wellbeing, that aims to simplify and make health reachable, affordable, and obtainable by everyone.",
-  description: "Pherus is revolutionizing healthcare by uniting every aspect of the medical ecosystem into one seamless platform. No more fragmented systems or frustrating communication gaps. With Pherus, patients, doctors, nurses, pharmacies, and even donors are connected in real-time, empowering everyone to work together for faster diagnoses, more efficient care, and ultimately, better health outcomes. Experience the future of healthcare with Pherus.",
+  header:
+    "An holistic approach to healthcare for everyone at the tips of your fingers",
+  subheader:
+    "Pherus is a comprehensive health ecosystem with an holistic approach to your wellbeing, that aims to simplify and make health reachable, affordable, and obtainable by everyone.",
+  description:
+    "Pherus is revolutionizing healthcare by uniting every aspect of the medical ecosystem into one seamless platform. No more fragmented systems or frustrating communication gaps. With Pherus, patients, doctors, nurses, pharmacies, and even donors are connected in real-time, empowering everyone to work together for faster diagnoses, more efficient care, and ultimately, better health outcomes. Experience the future of healthcare with Pherus.",
   mainNav: [
     {
       title: "Home",
@@ -14,14 +18,19 @@ export const siteConfig = {
     },
   ],
   links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn/ui",
-    docs: "https://ui.shadcn.com",
+    twitter: "https://twitter.com/la_nniina",
+    github: "https://github.com/Moluccus-inc",
+    docs: "/",
+  },
+  logos: {
+    svg: "/logo.svg",
+    ico: "/favicon.ico",
+    png: "/logo.webp",
   },
   copyrights: {
     trademake: "©",
     name: "pherus",
     yearIssued: "2024",
-    declaration: "All Rights Reserved."
-  }
+    declaration: "All Rights Reserved.",
+  },
 };

@@ -20,8 +20,8 @@ import Image from "next/image";
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
+    title: "Documentations",
+    href: "/documents",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
@@ -104,23 +104,22 @@ export function Navigationbar({ items }: MainNavProps) {
                         {siteConfig.name}
                       </div>
                       <p className="text-sm leading-tight text-muted-foreground">
-                        Beautifully designed components built with Radix UI and
-                        Tailwind CSS.
+                        {siteConfig.siteName}
                       </p>
                     </a>
                   </NavigationMenuLink>
                 </li>
 
-                <ListItem href="/docs" title="Introduction">
-                  Re-usable components built using Radix UI and Tailwind CSS.
+                <ListItem href="/about" title="Introduction">
+                  About Pherus and our vision towards better health care
                 </ListItem>
 
-                <ListItem href="/docs/installation" title="Installation">
-                  How to install dependencies and structure your app.
+                <ListItem href="/manual" title="Users Manual">
+                  How to install and use our applications
                 </ListItem>
 
-                <ListItem href="/docs/primitives/typography" title="Typography">
-                  Styles for headings, paragraphs, lists...etc
+                <ListItem href="/showcase" title="Projects">
+                  All future projects towards better health care with Pherus
                 </ListItem>
               </ul>
             </NavigationMenuContent>
@@ -128,7 +127,7 @@ export function Navigationbar({ items }: MainNavProps) {
 
           <NavigationMenuItem>
             <NavigationMenuTrigger className="flex bg-transparent">
-              Components
+              Composition
             </NavigationMenuTrigger>
 
             <NavigationMenuContent>
@@ -171,7 +170,7 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-[30px] p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            "block select-none space-y-1 rounded-[20px] p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className
           )}
           {...props}

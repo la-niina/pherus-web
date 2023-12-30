@@ -3,7 +3,6 @@ import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function Home() {
   const posts = [
