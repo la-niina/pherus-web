@@ -65,7 +65,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           defaultTheme="system"
           enableSystem={true}
         >
-          <div className="relative flex min-h-screen flex-col">
+          <div className="relative flex min-h-screen flex-col max-w-screen-2xl">
             <SiteHeader />
             <div className="flex-1">{children}</div>
             <Footerbar />

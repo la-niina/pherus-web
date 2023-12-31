@@ -8,6 +8,14 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "browserslist": [
+    "chrome 64",
+    "edge 79",
+    "firefox 67",
+    "opera 51",
+    "safari 12",
+    "brave 54"
+  ],
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-avatar": "^1.0.4",
@@ -19,6 +27,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "embla-carousel-react": "^8.0.0-rc17",
+    "express": "^4.18.2",
     "lucide-react": "^0.302.0",
     "next": "14.0.4",
     "next-themes": "^0.2.1",

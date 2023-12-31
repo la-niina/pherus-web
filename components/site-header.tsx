@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 import { siteConfig } from "@/config/site";
@@ -6,8 +8,6 @@ import { Icons } from "@/components/icons";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Navigationbar } from "./navigation-bar";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import Image from "next/image";
 import {
   Sheet,
@@ -19,6 +19,9 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { NavigationMenuLink } from "@/components/ui/navigation-menu";
+import * as React from "react";
+import {cn} from "@/lib/utils";
 
 export function SiteHeader() {
   return (
@@ -75,10 +78,19 @@ export function SiteHeader() {
                 </div>
               </SheetTrigger>
 
-              <SheetContent className="h-full rounded-md">
+              <SheetContent className="h-full bg-background">
                 <SheetHeader>
                   <SheetTitle>
-                    <Link href="/" className="flex items-start space-x-2">
+                    <Link href="#" className="flex items-start space-x-2">
+                      <h3 className="font-bold">{siteConfig.name}</h3>
+                    </Link>
+                  </SheetTitle>
+
+                  <SheetDescription>
+                    <a
+                      className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                      href="/"
+                      >
                       <Image
                         width={40}
                         height={40}
@@ -86,34 +98,30 @@ export function SiteHeader() {
                         alt="pherus"
                         src="/logo.webp"
                       />
-                      <div className="flex flex-col justify-start items-start">
-                        <h3 className="font-bold">{siteConfig.name}</h3>
-                        <a className="text-[12px]">{siteConfig.slogan}</a>
-                      </div>
-                    </Link>
-                  </SheetTitle>
 
-                  <SheetDescription>
-                    Make changes to your profile here. Click save when you're
-                    done.
+                      <div className="mb-2 mt-4 text-lg font-medium">
+                        {siteConfig.name}
+                      </div>
+                      <p className="text-sm leading-tight text-muted-foreground">
+                        {siteConfig.siteName}
+                      </p>
+                    </a>
                   </SheetDescription>
                 </SheetHeader>
 
-                <div className="grid gap-4 py-4">
-                  <div className="grid grid-cols-4 items-center gap-4">
-                    <text>Name</text>
-                  </div>
+                <div className="grid gap-4 py-2">
+                  <ListItem href="/about" title="Introduction">
+                    About Pherus and our vision towards better health care
+                  </ListItem>
 
-                  <div className="grid grid-cols-4 items-center gap-4">
-                    <text>Name</text>
-                  </div>
+                  <ListItem href="/manual" title="Users Manual">
+                    How to install and use our applications
+                  </ListItem>
+
+                  <ListItem href="/showcase" title="Projects">
+                    All future projects towards better health care with Pherus
+                  </ListItem>
                 </div>
-
-                <SheetFooter>
-                  <SheetClose asChild>
-                    <Button type="submit">Save changes</Button>
-                  </SheetClose>
-                </SheetFooter>
               </SheetContent>
             </Sheet>
           </nav>
@@ -122,3 +130,28 @@ export function SiteHeader() {
     </header>
   );
 }
+
+const ListItem = React.forwardRef<
+  React.ElementRef<"a">,
+  React.ComponentPropsWithoutRef<"a">
+>(({ className, title, children, ...props }, ref) => {
+  return (
+      <div className="w-full">
+        <a
+          ref={ref}
+          className={cn(
+            "block select-none space-y-1 rounded-[15px] p-2 leading-none no-underline outline-none transition-colors bg-accent hover:bg-primary focus:bg-accent",
+            className
+            )}
+          {...props}
+          >
+          <div className="text-sm font-extrabold leading-none">{title}</div>
+          <p className="line-clamp-2 text-xs font-light leading-snug">
+            {children}
+          </p>
+        </a>
+      </div>
+    );
+});
+ListItem.displayName = "ListItem";
+
