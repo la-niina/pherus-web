@@ -193,7 +193,7 @@ export default function Home() {
           matter where they live, your social , economic and life style.
         </p>
 
-        <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 mt-5">
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 mt-5">
           {/* Your Wellbeing */}
           <Card
             className="flex col-span-1"
