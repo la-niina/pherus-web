@@ -7,7 +7,7 @@ export default function Eula() {
 
       <div className="flex max-w-screen-2xl h-[1px] bg-slate-400 rounded-full" />
 
-      <div className="flex flex-col max-w-screen-2xl items-center justify-center gap-5 p-32">
+      <div className="flex flex-col max-w-screen-2xl items-center justify-center gap-5 p-5 sm:p-32">
         <a>
           Welcome to https://vercel.com and/or https://nextjs.org (each a
           "Site"), hosted by Vercel Inc. ("Vercel", "we", "us" and/or "our").
