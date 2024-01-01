@@ -79,7 +79,7 @@ export default function Home() {
   ];
   return (
     <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10 isolate relative">
-      <LuminusBackround/>
+      <LuminusBackround />
 
       <div className="mx-auto max-w-screen-2xl sm:max-w-2xl py-32 sm:py-48 lg:py-16">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
@@ -439,6 +439,65 @@ export default function Home() {
               </a>
             </CardContent>
           </Card>
+        </div>
+      </div>
+
+      <div className="w-full flex flex-col gap-3">
+        <h2 className="font-extrabold text-2xl">Quality guides</h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-5">
+          <div className="col-span-1 w-full">
+            <Card>
+              <CardContent className={"p-10"}>
+                <h3 className="font-extrabold text-2xl">Design for Safety</h3>
+
+                <div className="grid grid-cols-1 sm:grid-col-2 gap-5 w-full">
+                  <p className="col-span-1">
+                    Safeguard your users' security and privacy. Follow Android's
+                    best practices and guidance to build an app with a
+                    foundation of trust and integrity.
+                  </p>
+
+                  <div className="col-span-1 items-center justify-center w-full">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      alt=""
+                      src="https://developer.android.com/static/images/picto-icons/security-2.svg"
+                      srcSet=""
+                      sizes="(max-width: 600px) 100vw, (max-width: 840px) 50vw, 708px"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="col-span-1 w-full">
+            <Card>
+              <CardContent className={"p-10"}>
+                <h3 className="font-extrabold text-2xl">Technical quality</h3>
+
+                <div className="grid grid-cols-1 sm:grid-col-2 w-full">
+                  <p className="col-span-1">
+                    Technical quality is the foundation of a great app. Follow
+                    our technical quality guides to ensure stability, high
+                    performance, and a great user experience for your app.
+                  </p>
+                  <div className="col-span-1 items-center justify-center w-full">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      alt=""
+                      src="https://developer.android.com/static/images/picto-icons/graph-bar.svg"
+                      srcSet=""
+                      sizes="(max-width: 600px) 100vw, (max-width: 840px) 50vw, 708px"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
 

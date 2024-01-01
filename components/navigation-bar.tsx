@@ -48,7 +48,7 @@ const components: { title: string; href: string; description: string }[] = [
       "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
   },
   {
-    title: "Tooltip",
+    title: "About",
     href: "/docs/primitives/tooltip",
     description:
       "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
