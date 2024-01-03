@@ -49,9 +49,9 @@ const components: { title: string; href: string; description: string }[] = [
   },
   {
     title: "About",
-    href: "/docs/primitives/tooltip",
+    href: "/about",
     description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "Learn more about Pherus and our impact to your future.",
   },
 ];
 

@@ -174,6 +174,98 @@ export default function Home() {
         </div>
       </div>
 
+       {/** Our development ecosystem */}
+       <div className="flex flex-col w-full items-center justify-center">
+        <h1
+          className="font-[400] text-[2.8125rem]"
+          style={{
+            lineHeight: "-0.03125rem",
+          }}
+        >
+          Health Sectors We Handle
+        </h1>
+
+        <div>Integrated Seamless Intergration with </div>
+        <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-7 gap-2 mt-5 items-center justify-center">
+          <div
+            className="flex flex-col col-span-1 items-center justify-center bg-accent rounded-md w-auto box-border"
+            style={{
+              border: "1px solid #dadce0",
+            }}
+          >
+            <div className="flex flex-col p-5 items-center justify-center">
+              <text>institutions</text>
+            </div>
+          </div>
+
+          <div
+            className="flex flex-col col-span-1 items-center justify-center bg-accent rounded-md w-auto box-border"
+            style={{
+              border: "1px solid #dadce0",
+            }}
+          >
+            <div className="flex flex-col p-5 items-center justify-center">
+              <text>Manufacturing</text>
+            </div>
+          </div>
+
+          <div
+            className="flex flex-col col-span-1 items-center justify-center bg-accent rounded-md w-auto box-border"
+            style={{
+              border: "1px solid #dadce0",
+            }}
+          >
+            <div className="flex flex-col p-5 items-center justify-center">
+              <text>Pharmacies</text>
+            </div>
+          </div>
+
+          <div
+            className="flex flex-col col-span-1 items-center justify-center bg-accent rounded-md w-auto box-border"
+            style={{
+              border: "1px solid #dadce0",
+            }}
+          >
+            <div className="flex flex-col p-5 items-center justify-center">
+              <text>Hospitals</text>
+            </div>
+          </div>
+
+          <div
+            className="flex flex-col col-span-1 items-center justify-center bg-accent rounded-md w-auto box-border"
+            style={{
+              border: "1px solid #dadce0",
+            }}
+          >
+            <div className="flex flex-col p-5 items-center justify-center">
+              <text>Interprofessionals</text>
+            </div>
+          </div>
+
+          <div
+            className="flex flex-col col-span-1 items-center justify-center bg-accent rounded-md w-auto box-border"
+            style={{
+              border: "1px solid #dadce0",
+            }}
+          >
+            <div className="flex flex-col p-5 items-center justify-center">
+              <text>Delivery</text>
+            </div>
+          </div>
+
+          <div
+            className="flex flex-col col-span-1 items-center justify-center bg-accent rounded-md w-auto box-border"
+            style={{
+              border: "1px solid #dadce0",
+            }}
+          >
+            <div className="flex flex-col p-5 items-center justify-center">
+              <text>Patient</text>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="flex flex-col">
         <h1 className="text-center text-2xl font-extrabold leading-8">
           Our Approach To World HealthCare
@@ -186,7 +278,7 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 mt-5">
           {/* Your Wellbeing */}
           <Card
-            className="flex col-span-1"
+            className="flex col-span-1  bg-accent/90 hover:bg-accent"
             style={{
               transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
               boxShadow:
@@ -207,7 +299,7 @@ export default function Home() {
 
           {/* Interprofessionals */}
           <Card
-            className="flex col-span-1"
+            className="flex col-span-1 bg-accent/90 hover:bg-accent"
             style={{
               transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
               boxShadow:
@@ -229,7 +321,7 @@ export default function Home() {
 
           {/* Hospitals */}
           <Card
-            className="flex col-span-1"
+            className="flex col-span-1 bg-accent/90 hover:bg-accent"
             style={{
               transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
               boxShadow:
@@ -252,7 +344,7 @@ export default function Home() {
 
           {/* Pharmacies */}
           <Card
-            className="flex col-span-1"
+            className="flex col-span-1 bg-accent/90 hover:bg-accent"
             style={{
               transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
               boxShadow:
@@ -275,7 +367,7 @@ export default function Home() {
 
           {/* Laboratories */}
           <Card
-            className="flex col-span-1"
+            className="flex col-span-1 bg-accent/90 hover:bg-accent"
             style={{
               transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
               boxShadow:
@@ -298,7 +390,7 @@ export default function Home() {
 
           {/* Institutions */}
           <Card
-            className="flex col-span-1"
+            className="flex col-span-1 bg-accent/90 hover:bg-accent"
             style={{
               transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
               boxShadow:
@@ -322,7 +414,7 @@ export default function Home() {
 
           {/* Telemedicine */}
           <Card
-            className="flex col-span-1"
+            className="flex col-span-1 bg-accent/90 hover:bg-accent"
             style={{
               transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
               boxShadow:
@@ -343,7 +435,7 @@ export default function Home() {
 
           {/* Electronic Health Records (EHR) */}
           <Card
-            className="flex col-span-1"
+            className="flex col-span-1 bg-accent/90 hover:bg-accent"
             style={{
               transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
               boxShadow:
@@ -364,7 +456,14 @@ export default function Home() {
           </Card>
 
           {/* Health Monitoring Devices Integration */}
-          <Card className="flex col-span-1">
+          <Card
+            className="flex col-span-1 bg-accent/90 hover:bg-accent"
+            style={{
+              transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
+              boxShadow:
+                "0 0 0 1px rgba(53,72,91,.14), 0 3px 2px rgba(0,0,0,.04), 0 7px 5px rgba(0,0,0,.02), 0 13px 10px rgba(0,0,0,.02), 0 22px 17px rgba(0,0,0,.02) !important",
+            }}
+          >
             <CardContent className="flex flex-col justify-center">
               <text>Health Monitoring Devices Integration</text>
               <a className="flex text-xs font-light">
@@ -379,7 +478,7 @@ export default function Home() {
 
           {/* Prescription Management */}
           <Card
-            className="flex col-span-1"
+            className="flex col-span-1 bg-accent/90 hover:bg-accent"
             style={{
               transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
               boxShadow:
@@ -400,7 +499,7 @@ export default function Home() {
 
           {/* Health Education and Resources */}
           <Card
-            className="flex col-span-1"
+            className="flex col-span-1 bg-accent/90 hover:bg-accent"
             style={{
               transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
               boxShadow:
@@ -421,7 +520,7 @@ export default function Home() {
 
           {/* Appointment Scheduling */}
           <Card
-            className="flex col-span-1"
+            className="flex col-span-1 bg-accent/90 hover:bg-accent"
             style={{
               transition: "transform .6s cubic-bezier(0.16, 1, 0.3, 1)",
               boxShadow:
@@ -442,12 +541,13 @@ export default function Home() {
         </div>
       </div>
 
+      {/** Our guides */}
       <div className="w-full flex flex-col gap-3">
-        <h2 className="font-extrabold text-2xl">Quality guides</h2>
+        <h1 className="font-extrabold text-3xl">Quality guides</h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-5">
           <div className="col-span-1 w-full">
-            <Card>
+            <Card className="bg-accent/90 hover:bg-accent">
               <CardContent className={"p-10"}>
                 <h3 className="font-extrabold text-2xl">Design for Safety</h3>
 
@@ -474,7 +574,7 @@ export default function Home() {
           </div>
 
           <div className="col-span-1 w-full">
-            <Card>
+            <Card className="bg-accent/90 hover:bg-accent">
               <CardContent className={"p-10"}>
                 <h3 className="font-extrabold text-2xl">Technical quality</h3>
 
@@ -501,6 +601,162 @@ export default function Home() {
         </div>
       </div>
 
+      {/** Our development ecosystem */}
+      <div className="flex flex-col w-full items-center justify-center">
+        <h1
+          className="font-[400] text-[2.8125rem]"
+          style={{
+            lineHeight: "-0.03125rem",
+          }}
+        >
+          Pherus Technical Ecosystem
+        </h1>
+
+        <div>Integrated Development Environment (IDE)</div>
+        <div className="grid grid-cols-3 gap-2 mt-5">
+          <div
+            className="flex flex-col col-span-1 items-center justify-center bg-accent rounded-md w-auto box-border"
+            style={{
+              border: "1px solid #dadce0",
+            }}
+          >
+            <div className="flex flex-col p-5 items-center justify-center">
+              <Image
+                width={100}
+                height={100}
+                alt={siteConfig.appName}
+                src="/android-studio.svg"
+              />
+              <text>Android Studio</text>
+            </div>
+          </div>
+
+          <div
+            className="flex flex-col col-span-1 items-center justify-center bg-accent rounded-md w-auto box-border"
+            style={{
+              border: "1px solid #dadce0",
+            }}
+          >
+            <div className="flex flex-col p-5 items-center justify-center">
+              <Image
+                width={100}
+                height={100}
+                alt={siteConfig.appName}
+                src="/VisualStudioCode.svg"
+              />
+              <text>Visual Studio Code</text>
+            </div>
+          </div>
+
+          <div
+            className="flex flex-col col-span-1 items-center justify-center bg-accent rounded-md w-auto box-border"
+            style={{
+              border: "1px solid #dadce0",
+            }}
+          >
+            <div className="flex flex-col p-5 items-center justify-center">
+              <Image
+                width={100}
+                height={100}
+                className="flex"
+                alt={siteConfig.appName}
+                src="/xcode.svg"
+              />
+              <text>Xcode</text>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-5">Partners</div>
+        <div className="grid grid-cols-3 sm:grid-cols-5 gap-2 mt-5">
+          <div
+            className="flex flex-col col-span-1 items-center justify-center bg-accent/90 hover:bg-accent rounded-md w-auto box-border"
+            style={{
+              border: "1px solid #dadce0",
+            }}
+          >
+            <div className="flex flex-col p-5 items-center justify-center">
+              <Image
+                width={100}
+                height={100}
+                alt={siteConfig.appName}
+                src="/android-studio.svg"
+              />
+              <text>Android Studio</text>
+            </div>
+          </div>
+
+          <div
+            className="flex flex-col col-span-1 items-center justify-center bg-accent/90 hover:bg-accent rounded-md w-auto box-border"
+            style={{
+              border: "1px solid #dadce0",
+            }}
+          >
+            <div className="flex flex-col p-5 items-center justify-center">
+              <Image
+                width={100}
+                height={100}
+                alt={siteConfig.appName}
+                src="/android-studio.svg"
+              />
+              <text>Visual Studio Code</text>
+            </div>
+          </div>
+
+          <div
+            className="flex flex-col col-span-1 items-center justify-center bg-accent/90 hover:bg-accent rounded-md w-auto box-border"
+            style={{
+              border: "1px solid #dadce0",
+            }}
+          >
+            <div className="flex flex-col p-5 items-center justify-center">
+              <Image
+                width={100}
+                height={100}
+                alt={siteConfig.appName}
+                src="/android-studio.svg"
+              />
+              <text>Xcode</text>
+            </div>
+          </div>
+
+          <div
+            className="flex flex-col col-span-1 items-center justify-center bg-accent/90 hover:bg-accent rounded-md w-auto box-border"
+            style={{
+              border: "1px solid #dadce0",
+            }}
+          >
+            <div className="flex flex-col p-5 items-center justify-center">
+              <Image
+                width={100}
+                height={100}
+                alt={siteConfig.appName}
+                src="/android-studio.svg"
+              />
+              <text>Xcode</text>
+            </div>
+          </div>
+
+          <div
+            className="flex flex-col col-span-1 items-center justify-center bg-accent/90 hover:bg-accent rounded-md w-auto box-border"
+            style={{
+              border: "1px solid #dadce0",
+            }}
+          >
+            <div className="flex flex-col p-5 items-center justify-center">
+              <Image
+                width={100}
+                height={100}
+                alt={siteConfig.appName}
+                src="/android-studio.svg"
+              />
+              <text>Xcode</text>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/** for blogs section */}
       <div className=" py-24 sm:py-32">
         <div className="mx-auto max-w-screen-2xl px-0 lg:px-0">
           <div className="mx-auto max-w-2xl lg:mx-0">

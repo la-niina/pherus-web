@@ -2,16 +2,23 @@ import {
   LucideProps,
   Moon,
   SunMedium,
+  LayoutDashboardIcon,
+  Database,
   LucideTwitter,
   LucideIcon,
+  FileBoxIcon,
+  LogOutIcon,
 } from "lucide-react";
-import Image from "next/image";
 
 export type Icon = LucideIcon;
 
 export const Icons = {
   sun: SunMedium,
   moon: Moon,
+  storage: FileBoxIcon,
+  database: Database,
+  logout: LogOutIcon,
+  dashboards: LayoutDashboardIcon,
   twitter: LucideTwitter,
   gitHub: (props: LucideProps) => (
     <svg viewBox="0 0 438.549 438.549" {...props}>
